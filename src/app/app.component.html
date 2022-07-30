@@ -1,6 +1,6 @@
-<div
-  [style.font-size.px]="18"
-  (click)="message = 'Clicked'"
->
-  {{ message }}
+<div [style.font-size.px]="18">
+  <span (click)="message = 'Clicked'">
+    {{ message }}
+  </span>
+  <app-outer (messageChange)="message = $event"></app-outer>
 </div>

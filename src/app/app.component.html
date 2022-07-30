@@ -1,1 +1,6 @@
-<div>{{ message }}</div>
+<div
+  [style.font-size.px]="18"
+  (click)="message = 'Clicked'"
+>
+  {{ message }}
+</div>
